@@ -1,0 +1,337 @@
+[
+    {
+        "workoutTime": "20 Min AMRAP",
+        "workoutDetails": "1-2-3-..+1 Strict HSPU\n2-4-6-..+2 Pistols\n3-6-9-..+3 Burpees",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "100 Pistols",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "50 Burpees\n5 Rounds of\n10 Push Ups + 10 Air Squats",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "5 Rounds",
+        "workoutDetails": "30 Jump Overs\n20 Burpees\n30 Jump Overs\n2 Min Rest",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "4 RFT",
+        "workoutDetails": "40 Jump Over\n40 HSPU\n40 Pistols\n40 Burpees",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "12 RFT",
+        "workoutDetails": "6 Burpees\n6 Sit Ups\n6 Jump Over\n6 Push Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "25 Min AMRAP",
+        "workoutDetails": "8 HSPU\n8 Tuck Jumps",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "10 RFT",
+        "workoutDetails": "15 Air Squat\n7 Tuck Jumps",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "30 HSPU\n60 Pistols\n30 HSPU",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "4 RFT",
+        "workoutDetails": "25m Bear Crawl\n15 Push Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "75 HSPU\nEMOM 5 Burpees",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "150 Sit Ups\n75 Push Ups\n150 Air Squat\n75 Push Ups\n150 Sit Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "Death by",
+        "workoutDetails": "5 Burpees\nX Air Squats\nX Push Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "5 RFT",
+        "workoutDetails": "10 Strict HSPU\n40 Pistols",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "5 RFT",
+        "workoutDetails": "1 Min Push Ups\n1 Min Air Squats\n1 Min Sit Ups\n1 Min Pistols\n1 Min Rest",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "12 Min AMRAP",
+        "workoutDetails": "50 Air Squat\n30 Push Ups\n15 Burpees",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "2 RFT",
+        "workoutDetails": "24 Push Ups\n24 Air Squat\n24 Sit Ups\n24 Jumping Jacks\n48s Handstand Hold",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "75 Sit Ups\n75 Push Ups\n75 Air Squat\n75 Push Ups\n75 Sit Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "16 Min AMRAP",
+        "workoutDetails": "12 Burpees\n24 Sit Ups\n48 Air Squats",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "100 Jump Over\n50 Push Ups\n40 Air Squats\n30 HSPU\nChipper; go back up; HSPU 1x",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "3 RFT",
+        "workoutDetails": "15 Burpees\n10 HSPU",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "5 RFT",
+        "workoutDetails": "6 Strict HSPU\n12 Jump Overs",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "150m Handstand Walk",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "50 Burpees\n50 HSPU\n50 Burpees\nEMOM: 10 Air Squats",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time 21-15-9-6-3",
+        "workoutDetails": "Strict HSPU\nPistols\nBurpees",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "100m Handstand Walk",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "24 Min AMRAP",
+        "workoutDetails": "16 HSPU\n32 Tuck Jumps",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "20 Min AMRAP",
+        "workoutDetails": "20 Lunges\n25 Sit Ups\n30 Air Squats",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "15-12-9-12-15 Push Ups\n15-12-9-12-15 HSPU\n15-12-9-12-15 Burpees",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "5 RFT",
+        "workoutDetails": "25 Air Squats\n5 Strict HSPU",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "5 RFT",
+        "workoutDetails": "4 Strict HSPU\n16 Lunges\n16 Burpees",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For 45 Minutes",
+        "workoutDetails": "Practice any of the following\nHandstand\nHandstand walk\nPress To Handstand",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "50-40-30 Air Squats\n100-80-60 Jump Over",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "20 Min AMRAP",
+        "workoutDetails": "2 Strict HSPU\n4 Burpees\n8 Pistols",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "12-9-6 Strict HSPU\n12-9-6 Burpee Jump Over",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "5 RFT",
+        "workoutDetails": "10 HSPU\n25 Air Squats\n50 Sit Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "50 HSPU\n50 Pistols\n25 HSPU",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "50 RFT",
+        "workoutDetails": "1 Burpee\n1 Push Up\n1 Jumping Jack\n1 Sit Up\n1 Handstand",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "10 RFT",
+        "workoutDetails": "10 Air Squat\n15 Tuck Jumps",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "60 Pistols\n60 Air Squats\n60 Pistols",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "50 Jump Over\n40 Sit Ups\n30 Lunges\n20 Burpees",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "50 Push Ups\n100 Sit Ups\n150 Air Squats",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "Find",
+        "workoutDetails": "Max Unbroken Handstand Walk",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "3 RFT",
+        "workoutDetails": "50 Lunges\n15 Burpees\n50 Push Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "5 RFT",
+        "workoutDetails": "20 HSPU\n50 Air Squats\n70 Sit Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "150m Shuttle Run (5m+5m)\n25 Burpees\n150m Shuttle Run (5m+5m)\n25 Burpees",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "80-60-40-20 Sit Ups\n80-60-40-20 Air Squats",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "10 RFT",
+        "workoutDetails": "5 Pistols\n5 Burpees\n5 Jump Over\n5 HSPU\n45 Sec Rest",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "10-9-8-...-2-1 Burpees\n10 Push Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "50m Handstand Walk\nEach time you break do\n5 Burpees",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "50 Jump Over\n50 Push Ups\n50 Air Squats\n50 HSPU\nChipper; go back up; HSPU 1x",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "5 Rounds of",
+        "workoutDetails": "Max Distance Handstand Walk",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "3 RFT",
+        "workoutDetails": "30 Pistols\n60 Sec Plank",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "70 Burpees\n5 Rounds of\n20 Push Ups\n20 Air Squats",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "12 RFT",
+        "workoutDetails": "50 Air Squat\n25 Push Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "50-40-30-20-10 Lunges\n10-20-30-40-50 Push Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "5 RFT",
+        "workoutDetails": "21 Sit Ups\n14 Push Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "20 Jump Over Burpees\n5 Rounds Of\n10 Tuck Jumps + 10 Push Ups\n20 Jump Over Burpees",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "10 Rounds of",
+        "workoutDetails": "Max Distance Handstand Walk\nRest as needed",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "7 Min AMRAP",
+        "workoutDetails": "4 Pistols\n6 HSPUs",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "100m Shuttle Run (5m+5m)\n50 Burpees\n100m Shuttle Run (5m+5m)",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "400m Burpee Broad Jump",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "14 Min AMRAP",
+        "workoutDetails": "21 Jump Over\n14 Push Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "50 HSPU\n40 Burpees\n30 Pistols",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "For Time",
+        "workoutDetails": "30 Burpees\n40 Pistols\n50 Push Ups\n60 Air Squats",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "15 Min AMRAP",
+        "workoutDetails": "7 Jump Over\n7 Push Ups",
+        "category": "Home"
+    },
+    {
+        "workoutTime": "20 Min EMOM",
+        "workoutDetails": "Min 1: 15 HSPU\nMin 2: 20 Pistols\nMin 3: 25 Push Ups\nMin 4: Rest",
+        "category": "Home"
+    }
+]

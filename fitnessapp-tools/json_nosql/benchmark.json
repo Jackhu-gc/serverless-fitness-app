@@ -1,0 +1,122 @@
+[
+    {
+        "workoutName": "Angie",
+        "workoutTime": "For Time",
+        "workoutDetails": "100 Pull-ups\n100 Push-ups\n100 Sit-ups\n100 Squats\nComplete all reps of each exercise before moving to the next.",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Barbara",
+        "workoutTime": "For time",
+        "workoutDetails": "Five rounds\n20 Pull-ups\n30 Push-ups\n40 Sit-ups\n50 Squats",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Chelsea",
+        "workoutTime": "EMOM: 30 Min",
+        "workoutDetails": "5 Pull-ups\n10 Push-ups\n15 Squats",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Cindy",
+        "workoutTime": "AMRAP: 20 Min",
+        "workoutDetails": "5 Pull-ups\n10 Push-ups\n15 Squats",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Diane",
+        "workoutTime": "For time",
+        "workoutDetails": "21-15-9 reps\nDeadlift 225 lbs\nHandstand push-ups",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Elizabeth",
+        "workoutTime": "For time",
+        "workoutDetails": "21-15-9 reps\nClean 135 lbs\nRing Dips",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Fran",
+        "workoutTime": "For time",
+        "workoutDetails": "21-15-9 reps\nThruster 95 lbs\nPull-ups",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Grace",
+        "workoutTime": "For time",
+        "workoutDetails": "Clean and Jerk 135 lbs; 30 reps",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Helen",
+        "workoutTime": "For time",
+        "workoutDetails": "Three rounds\n400 meter run\n1.5 pood Kettlebell swing; 21 reps\nPull-ups 12 reps",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Isabel",
+        "workoutTime": "For time",
+        "workoutDetails": "Snatch 135 lbs. 30 reps",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Jackie",
+        "workoutTime": "For time",
+        "workoutDetails": "1000 meter row\nThruster 45 lbs; 50 reps\nPull-ups; 30 reps",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Karen",
+        "workoutTime": "For time",
+        "workoutDetails": "Wall-ball 150 shots",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Linda",
+        "workoutTime": "For time",
+        "workoutDetails": "10/9/8/7/6/5/4/3/2/1 rep\nDeadlift 1 1/2 BW\nBench BW\nClean 3/4 BW",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Nancy",
+        "workoutTime": "For time",
+        "workoutDetails": "Five rounds\n400 meter run\nOverhead squat 95 lbs x 15",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Annie",
+        "workoutTime": "For time",
+        "workoutDetails": "50-40-30-20 and 10 rep\nDouble-unders\nSit-ups",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Eva",
+        "workoutTime": "For time",
+        "workoutDetails": "Five rounds\nRun 800 meters\n2 pood KB swing; 30 reps\n30 pullups",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Kelly",
+        "workoutTime": "For time",
+        "workoutDetails": "Five rounds\nRun 400 meters\n30 box jump; 24 inch box\n30 Wall ball shots; 20 lbs ball",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Lynne",
+        "workoutTime": "There is NO time component to this WOD.",
+        "workoutDetails": "Five rounds with max reps\nBodyweight bench press (e.g. same amount on bar as you weigh)\nPullups",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Nicole",
+        "workoutTime": "AMRAP: 20 Min",
+        "workoutDetails": "Run 400 meters\nMax rep Pull-ups\nNote number of pull-ups completed for each round",
+        "category": "Benchmark"
+    },
+    {
+        "workoutName": "Mary",
+        "workoutTime": "AMRAP: 20 Min",
+        "workoutDetails": "5 Handstand push-ups\n10 1-legged squats\n15 Pull-ups",
+        "category": "Benchmark"
+    }
+]
