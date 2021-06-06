@@ -30,23 +30,6 @@ exports.get = async (event, context, callback) => {
   //   } else {
   //     console.log('Query succeeded.');
 
-  //     if (anyinTable != null) {
-  //       console.log('before filter: ' + data.Items[0].workoutDetails);
-  //       filterResults = data.Items.filter((item) =>
-  //         item.workoutDetails
-  //           .toString()
-  //           .toLowerCase()
-  //           .includes(anyinTable.toString().toLowerCase())
-  //       );
-  //       // FilterItems(data.Items, anyinTable);
-  //       return callback(null, {
-  //         statusCode: 200,
-  //         body: JSON.stringify({
-  //           workout: filterResults,
-  //         }),
-  //       });
-  //     }
-
   //     return callback(null, {
   //       statusCode: 200,
   //       body: JSON.stringify({
@@ -74,7 +57,7 @@ exports.get = async (event, context, callback) => {
 
 function FilterItems(items, queryString) {
   let filterWorkoutDetails, filterWorkoutTime, filterWorkoutName, filterResults;
-  console.log(items[0]);
+
   filterWorkoutDetails = items.filter((item) => {
     if (item.workoutDetails != undefined) {
       return SearchQueryString(item.workoutDetails, queryString);
@@ -92,15 +75,13 @@ function FilterItems(items, queryString) {
       return SearchQueryString(item.workoutName, queryString);
     }
   });
-  console.log('filterWorkoutName: ' + typeof filterWorkoutDetails);
-  console.log('filterWorkoutTime: ' + typeof filterWorkoutTime);
-  console.log('filterWorkoutDetails: ' + typeof filterWorkoutDetails);
+
   filterResults = filterWorkoutDetails
     .concat(filterWorkoutName)
     .concat(filterWorkoutTime);
   let set = new Set(filterResults);
   filterResults = Array.from(set);
-  console.log('before Return' + filterResults[0]);
+
   return filterResults;
 }
 
