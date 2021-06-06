@@ -99,8 +99,15 @@ functions:
     description: Get workouts from different categories
     events:
       - http:
-          path: workout
+          path: workout/{category}
           method: get
+          request:
+            parameters:
+              paths:
+                category: true
+              querystrings:
+                anyinTable: false
+
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
@@ -153,9 +160,13 @@ resources:
         AttributeDefinitions:
           - AttributeName: 'Id'
             AttributeType: 'S'
+          - AttributeName: 'category'
+            AttributeType: 'S'
         KeySchema:
-          - AttributeName: 'Id'
+          - AttributeName: 'category'
             KeyType: 'HASH'
+          - AttributeName: 'Id'
+            KeyType: 'RANGE'
         ProvisionedThroughput:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1

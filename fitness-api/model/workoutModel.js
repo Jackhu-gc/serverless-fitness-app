@@ -1,0 +1,3 @@
+//workout model
+
+function getWorkoutModel() {}

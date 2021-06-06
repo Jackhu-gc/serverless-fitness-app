@@ -185,7 +185,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/fitnessapp/dev/1622373568116-2021-05-30T11:19:28.116Z/fitnessapp.zip"
+          "S3Key": "serverless/fitnessapp/dev/1622981906103-2021-06-06T12:18:26.103Z/fitnessapp.zip"
         },
         "Handler": "import-data/ddbImporter.handler",
         "Runtime": "nodejs14.x",
@@ -216,7 +216,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/fitnessapp/dev/1622373568116-2021-05-30T11:19:28.116Z/fitnessapp.zip"
+          "S3Key": "serverless/fitnessapp/dev/1622981906103-2021-06-06T12:18:26.103Z/fitnessapp.zip"
         },
         "Handler": "api/workout.get",
         "Runtime": "nodejs14.x",
@@ -241,24 +241,24 @@
         "GetWorkoutLogGroup"
       ]
     },
-    "ImportDataLambdaVersiontM9rOTbyQhWG1ibLUh8xe7YIuhVAehXsrWTFqu7Mk": {
+    "ImportDataLambdaVersionGUsAhqJHhVGtHZGyDMFZica5XWqDumuGZsDjzMFhYA": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ImportDataLambdaFunction"
         },
-        "CodeSha256": "rEhZHd8jzpMjWAe2w+9BGQLT8IAkEwxIXGUJ4BleKoU="
+        "CodeSha256": "OpNpBt/lU+LAnomFbi5Wnid6sMWZwIDioPBxzIJvOf4="
       }
     },
-    "GetWorkoutLambdaVersionrgHeZurMDEOLyRLQqdlFH0dolL1EYSsi9dh18iCPI": {
+    "GetWorkoutLambdaVersione6CLLoZVZy97tpu1z6lziCFxov0xEpsoKvlD71JzxFQ": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetWorkoutLambdaFunction"
         },
-        "CodeSha256": "rEhZHd8jzpMjWAe2w+9BGQLT8IAkEwxIXGUJ4BleKoU=",
+        "CodeSha256": "OpNpBt/lU+LAnomFbi5Wnid6sMWZwIDioPBxzIJvOf4=",
         "Description": "Get workouts from different categories"
       }
     },
@@ -349,13 +349,28 @@
         }
       }
     },
-    "ApiGatewayMethodWorkoutGet": {
+    "ApiGatewayResourceWorkoutCategoryVar": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Ref": "ApiGatewayResourceWorkout"
+        },
+        "PathPart": "{category}",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodWorkoutCategoryVarGet": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "HttpMethod": "GET",
-        "RequestParameters": {},
+        "RequestParameters": {
+          "method.request.querystring.anyinTable": false,
+          "method.request.path.category": true
+        },
         "ResourceId": {
-          "Ref": "ApiGatewayResourceWorkout"
+          "Ref": "ApiGatewayResourceWorkoutCategoryVar"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -392,7 +407,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1622373564935": {
+    "ApiGatewayDeployment1622981901343": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -401,7 +416,7 @@
         "StageName": "dev"
       },
       "DependsOn": [
-        "ApiGatewayMethodWorkoutGet"
+        "ApiGatewayMethodWorkoutCategoryVarGet"
       ]
     },
     "GetWorkoutLambdaPermissionApiGateway": {
@@ -449,12 +464,20 @@
           {
             "AttributeName": "Id",
             "AttributeType": "S"
+          },
+          {
+            "AttributeName": "category",
+            "AttributeType": "S"
           }
         ],
         "KeySchema": [
           {
-            "AttributeName": "Id",
+            "AttributeName": "category",
             "KeyType": "HASH"
+          },
+          {
+            "AttributeName": "Id",
+            "KeyType": "RANGE"
           }
         ],
         "ProvisionedThroughput": {
@@ -480,7 +503,7 @@
     "ImportDataLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ImportDataLambdaVersiontM9rOTbyQhWG1ibLUh8xe7YIuhVAehXsrWTFqu7Mk"
+        "Ref": "ImportDataLambdaVersionGUsAhqJHhVGtHZGyDMFZica5XWqDumuGZsDjzMFhYA"
       },
       "Export": {
         "Name": "sls-fitnessapp-dev-ImportDataLambdaFunctionQualifiedArn"
@@ -489,7 +512,7 @@
     "GetWorkoutLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetWorkoutLambdaVersionrgHeZurMDEOLyRLQqdlFH0dolL1EYSsi9dh18iCPI"
+        "Ref": "GetWorkoutLambdaVersione6CLLoZVZy97tpu1z6lziCFxov0xEpsoKvlD71JzxFQ"
       },
       "Export": {
         "Name": "sls-fitnessapp-dev-GetWorkoutLambdaFunctionQualifiedArn"
