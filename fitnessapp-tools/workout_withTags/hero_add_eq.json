@@ -1,0 +1,702 @@
+[
+    {
+        "workoutName": "JT",
+        "workoutTime": "For time",
+        "workoutDetails": "21-15-9 rep\nHandstand push-ups\nRing dips\nPush-ups",
+        "category": "Hero",
+        "tag": "GYM RINGS"
+    },
+    {
+        "workoutName": "MICHAEL",
+        "workoutTime": "For time",
+        "workoutDetails": "Three rounds\nRun 800 meters\n50 Back Extensions\n50 Sit-ups",
+        "category": "Hero",
+        "tag": "GHD MACHINE"
+    },
+    {
+        "workoutName": "MURPH",
+        "workoutTime": "For time",
+        "workoutDetails": "1 mile Run\n100 Pull-ups\n200 Push-ups\n300 Squats\n1 mile Run",
+        "category": "Hero",
+        "tag": "PULL UP BAR, BARBELL"
+    },
+    {
+        "workoutName": "DANIEL",
+        "workoutTime": "For time",
+        "workoutDetails": "50 Pull-ups\n400 meters run\n95 lbs Thruster; 21 rep\n800 meters run\n95 lbs Thruster; 21 rep\n400 meters run\n50 Pull-ups",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "JOSH",
+        "workoutTime": "For time",
+        "workoutDetails": "95 lbs Overhead squat; 21 rep\n42 Pull-up\n95 lbs Overhead squat; 15 rep\n30 Pull-up\n95 lbs Overhead squat; 9 rep\n18 Pull-ups",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "JASON",
+        "workoutTime": "For time",
+        "workoutDetails": "100 Squat\n5 Muscle-up\n75 Squat\n10 Muscle-up\n50 Squat\n15 Muscle-up\n25 Squat\n20 Muscle-ups",
+        "category": "Hero",
+        "tag": "PULL UP BAR, BARBELL"
+    },
+    {
+        "workoutName": "BADGER",
+        "workoutTime": "For time",
+        "workoutDetails": "Three rounds\n95 lbs Squat clean; 30 rep\n30 Pull-up\nRun 800 meters",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "JOSHIE",
+        "workoutTime": "For time",
+        "workoutDetails": "Three rounds\n40 lbs Dumbbell snatch; 21 reps; right arm\n21 L Pull-up\n40 lbs Dumbbell snatch; 21 reps; left arm\n21 L Pull-ups",
+        "category": "Hero",
+        "tag": "DUMBBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "NATE",
+        "workoutTime": "AMRAP: 20 Min",
+        "workoutDetails": "2 Muscle-up\n4 Handstand Push-up\n8 2-Pood Kettlebell swings",
+        "category": "Hero",
+        "tag": "PULL UP BAR, KETTLEBELL"
+    },
+    {
+        "workoutName": "RANDY",
+        "workoutTime": "For time",
+        "workoutDetails": "75lbs power snatch; 75 reps",
+        "category": "Hero",
+        "tag": "BARBELL"
+    },
+    {
+        "workoutName": "TOMMY V",
+        "workoutTime": "For time",
+        "workoutDetails": "115 lbs Thruster; 21 rep\n15 ft Rope Climb; 12 ascents\n115 lbs Thruster; 15 rep\n15 ft Rope Climb; 9 ascents\n115 lbs Thruster; 9 rep\n15 ft Rope Climb; 6 ascents",
+        "category": "Hero",
+        "tag": "BARBELL, ROPE"
+    },
+    {
+        "workoutName": "GRIFF",
+        "workoutTime": "For time",
+        "workoutDetails": "Run 800 meter\nRun 400 meters backward\nRun 800 meter\nRun 400 meters backwards",
+        "category": "Hero",
+        "tag": ""
+    },
+    {
+        "workoutName": "RYAN",
+        "workoutTime": "For time",
+        "workoutDetails": "Five rounds\n7 Muscle-up\n21 Burpees",
+        "category": "Hero",
+        "tag": "PULL UP BAR"
+    },
+    {
+        "workoutName": "ERIN",
+        "workoutTime": "For time",
+        "workoutDetails": "Five rounds\n40 lbs Dumbbells split clean; 15 rep\n21 Pull-ups",
+        "category": "Hero",
+        "tag": "DUMBBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "MR. JOSHUA",
+        "workoutTime": "For time",
+        "workoutDetails": "Five rounds\nRun 400 meter\n30 Glute-ham sit-up\n250 lbs Deadlift; 15 reps",
+        "category": "Hero",
+        "tag": "BARBELL"
+    },
+    {
+        "workoutName": "DT",
+        "workoutTime": "For time",
+        "workoutDetails": "Five rounds\n155 lbs Deadlift; 12 rep\n155 lbs Hang power clean; 9 rep\n155 lbs Push jerk; 6 reps",
+        "category": "Hero",
+        "tag": "BARBELL"
+    },
+    {
+        "workoutName": "DANNY",
+        "workoutTime": "AMRAP: 20 Min",
+        "workoutDetails": "24in box jump; 30 rep\n115 lbs push press; 20 rep\n30 pull-ups",
+        "category": "Hero",
+        "tag": "BOX, PULL UP BAR, BARBELL"
+    },
+    {
+        "workoutName": "HANSEN",
+        "workoutTime": "For time",
+        "workoutDetails": "Five rounds\n30 reps; 2 pood Kettlebell swin\n30 Burpee\n30 Glute-ham sit-ups",
+        "category": "Hero",
+        "tag": "KETTLEBELL"
+    },
+    {
+        "workoutName": "TYLER",
+        "workoutTime": "For time",
+        "workoutDetails": "Five rounds\n7 Muscle-up\n21 reps 95 lbs Sumo-deadlift high-pull",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "LUMBERJACK 20",
+        "workoutTime": "For time",
+        "workoutDetails": "20 Deadlifts (275lbs\nRun 400\n20 KB swings (2pood\nRun 400\n20 Overhead Squats (115lbs\nRun 400\n20 Burpee\nRun 400\n20 Pullups (Chest to Bar\nRun 400\n20 Box jumps (24in\nRun 400\n20 DB Squat Cleans (45lbs each\nRun 400m",
+        "category": "Hero",
+        "tag": "BARBELL, BOX, PULL UP BAR, DUMBBELL, KETTLEBELL"
+    },
+    {
+        "workoutName": "STEPHEN",
+        "workoutTime": "For time",
+        "workoutDetails": "30-25-20-15-10-5 rep rounds\nGHD sit-u\nBack extension\nKnees to elbow\n95 lbs Stiff legged deadlift",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR, GHD MACHINE"
+    },
+    {
+        "workoutName": "GARRETT",
+        "workoutTime": "For time",
+        "workoutDetails": "Three rounds\n75 Squats\n25 Ring handstand push-ups\n25 L-pull-ups",
+        "category": "Hero",
+        "tag": "GYM RINGS, PULL UP BAR, BARBELL"
+    },
+    {
+        "workoutName": "WAR FRANK",
+        "workoutTime": "For time",
+        "workoutDetails": "Three rounds\n25 Muscle-ups\n100 Squats\n35 GHD situps",
+        "category": "Hero",
+        "tag": "PULL UP BAR, BARBELL, GHD MACHINE"
+    },
+    {
+        "workoutName": "MCGHEE",
+        "workoutTime": "AMRAP: 30 Min",
+        "workoutDetails": "275 lbs Deadlift; 5 reps\n13 Push-ups\n9 Box jumps; 24 inch box",
+        "category": "Hero",
+        "tag": "BARBELL, BOX"
+    },
+    {
+        "workoutName": "PAUL",
+        "workoutTime": "For Time",
+        "workoutDetails": "Five rounds\n50 Double unders\n35 Knees to elbows\n185 lbs Overhead walk; 20 yards",
+        "category": "Hero",
+        "tag": "PULL UP BAR, SKIPPING ROPE, BARBELL"
+    },
+    {
+        "workoutName": "JERRY",
+        "workoutTime": "For Time",
+        "workoutDetails": "Run 1 mile\nRow 2K\nRun 1 mile",
+        "category": "Hero",
+        "tag": "ROWER"
+    },
+    {
+        "workoutName": "NUTTS",
+        "workoutTime": "For Time",
+        "workoutDetails": "10 Handstand push-ups\n250 lbs Deadlift; 15 reps\n25 Box jumps; 30 inch box\n50 Pull-ups\n100 Wallball shots; 20 lbss; 10ft\n200 Double-unders\nRun 400 meters with a 45lb plate",
+        "category": "Hero",
+        "tag": "SKIPPING ROPE, BARBELL, BOX, PULL UP BAR, MED BALL"
+    },
+    {
+        "workoutName": "ARNIE",
+        "workoutTime": "For Time",
+        "workoutDetails": "With a single 2 pood kettlebell:\n21 Turkish get-ups; Right arm\n50 Swings\n21 Overhead squats; Left arm\n50 Swings\n21 Overhead squats; Right arm\n50 Swings\n21 Turkish get-ups; Left arm",
+        "category": "Hero",
+        "tag": "KETTLEBELL"
+    },
+    {
+        "workoutName": "THE SEVEN",
+        "workoutTime": "For Time",
+        "workoutDetails": "Seven rounds\n7 Handstand push-up\n135 lbs Thruster; 7 rep\n7 Knees to elbow\n245 lbs Deadlift; 7 rep\n7 Burpee\n7 Kettlebell swings; 2 pood\n7 Pull-ups",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR, KETTLEBELL"
+    },
+    {
+        "workoutName": "RJ",
+        "workoutTime": "For Time",
+        "workoutDetails": "Five rounds\nRun 800 meters\n15 ft Rope Climb; 5 ascents\n50 Push-ups",
+        "category": "Hero",
+        "tag": "ROPE"
+    },
+    {
+        "workoutName": "LUCE",
+        "workoutTime": "For Time",
+        "workoutDetails": "Wearing a 20 lbs vest; three rounds\nRun 1K\n10 Muscle-ups\n100 Squats",
+        "category": "Hero",
+        "tag": "VEST, PULL UP BAR, BARBELL"
+    },
+    {
+        "workoutName": "JOHNSON",
+        "workoutTime": "Rounds in 20 Min",
+        "workoutDetails": "245 lbs Deadlift; 9 reps\n8 Muscle-ups\n155 lbs Squat clean; 9 reps",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "ROY",
+        "workoutTime": "25 Pull-ups\\nFor Time",
+        "workoutDetails": "Five rounds\n225 lbs Deadlift; 15 reps\n20 Box jumps; 24 inch box\n25 Pull-ups",
+        "category": "Hero",
+        "tag": "BARBELL, BOX, PULL UP BAR"
+    },
+    {
+        "workoutName": "ADAMBROWN",
+        "workoutTime": "For Time",
+        "workoutDetails": "Two rounds\n295 lbs Deadlift; 24 rep\n24 Box jumps; 24 inch box\n24 Wallball shots; 20 lbs ball\n195 lbs Bench press; 24 rep\n24 Box jumps; 24 inch bo\n24 Wallball shots; 20 lbs ball\n145 lbs Clean; 24 reps",
+        "category": "Hero",
+        "tag": "BARBELL, BOX, MED BALL"
+    },
+    {
+        "workoutName": "COE",
+        "workoutTime": "For Time",
+        "workoutDetails": "Ten rounds\n95 lbs Thruster; 10 reps\n10 Ring push-ups",
+        "category": "Hero",
+        "tag": "GYM RINGS, BARBELL"
+    },
+    {
+        "workoutName": "SEVERIN",
+        "workoutTime": "For Time",
+        "workoutDetails": "50 Strict Pull-up\n100 Push-ups; release hands from floor at the botto\nRun 5\nIf you've got a twenty lbs vest or body armor; wear it.",
+        "category": "Hero",
+        "tag": "PULL UP BAR, VEST"
+    },
+    {
+        "workoutName": "HELTON",
+        "workoutTime": "For Time",
+        "workoutDetails": "Three rounds\nRun 800 meters\n30 reps; 50 lbs dumbbell squat cleans\n30 Burpees",
+        "category": "Hero",
+        "tag": "DUMBBELL, BARBELL"
+    },
+    {
+        "workoutName": "JACK",
+        "workoutTime": "AMRAP: 20 Min",
+        "workoutDetails": "115 lbs Push press; 10 reps\n10 KB Swings; 1.5 pood\n10 Box jumps; 24 inch box",
+        "category": "Hero",
+        "tag": "BOX, BARBELL, KETTLEBELL"
+    },
+    {
+        "workoutName": "FORREST",
+        "workoutTime": "For Time",
+        "workoutDetails": "Three rounds\n20 L-pull-ups\n30 Toes to bar\n40 Burpees\nRun 800 meters",
+        "category": "Hero",
+        "tag": "PULL UP BAR"
+    },
+    {
+        "workoutName": "BULGER",
+        "workoutTime": "For Time",
+        "workoutDetails": "Ten rounds\nRun 150 meters\n7 Chest to bar pull-ups\n135 lbs Front squat; 7 reps\n7 Handstand push-ups",
+        "category": "Hero",
+        "tag": "PULL UP BAR, BARBELL"
+    },
+    {
+        "workoutName": "BRENTON",
+        "workoutTime": "For Time",
+        "workoutDetails": "Five rounds\nBear crawl 100 feet\nStanding broad-jump; 100 feet\nDo three Burpees after every five broad-jumps.\nIf you've got a twenty lbs vest or body armor; wear it.",
+        "category": "Hero",
+        "tag": "VEST"
+    },
+    {
+        "workoutName": "BLAKE",
+        "workoutTime": "For Time",
+        "workoutDetails": "Four rounds\n100 foot Walking lunge with 45lb plate held overhead\n30 Box jump; 24 inch box\n20 Wallball shots; 20 lbs ball\n10 Handstand push-ups",
+        "category": "Hero",
+        "tag": "BOX, MED BALL"
+    },
+    {
+        "workoutName": "COLLIN",
+        "workoutTime": "For Time",
+        "workoutDetails": "Six rounds\nCarry 50 lbs sandbag 400 meters\n115 lbs Push press; 12 reps\n12 Box jumps; 24 inch box\n95 lbs Sumo deadlift high-pull; 12 reps",
+        "category": "Hero",
+        "tag": "BARBELL, BOX, SANDBAG"
+    },
+    {
+        "workoutName": "THOMPSON",
+        "workoutTime": "For Time",
+        "workoutDetails": "Ten rounds\n15 ft Rope Climb; 1 ascent\n95 lbs Back squat; 29 rep\n135 lbs barbells Farmer carry; 10 meter\nBegin the rope climbs seated on the floor.",
+        "category": "Hero",
+        "tag": "BARBELL, ROPE"
+    },
+    {
+        "workoutName": "WHITTEN",
+        "workoutTime": "For Time",
+        "workoutDetails": "Five rounds\n22 Kettlebell swings; 2 pood\n22 Box jump; 24 inch box\nRun 400 meters\n22 Burpees\n22 Wall ball shots; 20 lbs ball",
+        "category": "Hero",
+        "tag": "BOX, MED BALL, KETTLEBELL"
+    },
+    {
+        "workoutName": "BULL",
+        "workoutTime": "For Time",
+        "workoutDetails": "Two rounds\n200 Double-unders\n135 lbs Overhead squat; 50 reps\n50 Pull-ups\nRun 1 mile",
+        "category": "Hero",
+        "tag": "SKIPPING ROPE, BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "RANKEL",
+        "workoutTime": "AMRAP: 20 Min",
+        "workoutDetails": "225 lbs Deadlift; 6 reps\n7 Burpee pull-ups\n10 Kettlebell swings; 2 pood\nRun 200 meters",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR, KETTLEBELL"
+    },
+    {
+        "workoutName": "HOLBROOK",
+        "workoutTime": "Each Round For Time",
+        "workoutDetails": "Ten rounds\n115 lbs Thruster; 5 reps\n10 Pull-ups\n100 meter Sprint\nRest 1 minute",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "LEDESMA",
+        "workoutTime": "AMRAP: 20 Min",
+        "workoutDetails": "5 Parallette handstand push-up\n10 Toes through ring\n20 lbs Medicine ball cleans; 15 reps",
+        "category": "Hero",
+        "tag": "PARALLETTE, GYM RINGS, MED BALL"
+    },
+    {
+        "workoutName": "WITTMAN",
+        "workoutTime": "For Time",
+        "workoutDetails": "Seven rounds\n1.5 pood Kettlebell swing; 15 rep\n95 lbs Power clean; 15 rep\n15 Box jumps; 24in box",
+        "category": "Hero",
+        "tag": "BARBELL, BOX, KETTLEBELL"
+    },
+    {
+        "workoutName": "MCCLUSKEY",
+        "workoutTime": "For Time",
+        "workoutDetails": "Three rounds\n9 Muscle-ups\n15 Burpee pull-ups\n21 Pull-ups\nRun 800 meters",
+        "category": "Hero",
+        "tag": "PULL UP BAR"
+    },
+    {
+        "workoutName": "WEAVER",
+        "workoutTime": "For Time",
+        "workoutDetails": "Four rounds\n10 L-pull-ups\n15 Push-ups\n15 Chest to bar Pull-ups\n15 Push-ups\n20 Pull-ups\n15 Push-ups",
+        "category": "Hero",
+        "tag": "PULL UP BAR"
+    },
+    {
+        "workoutName": "ABBATE",
+        "workoutTime": "For Time",
+        "workoutDetails": "Run 1 mile\n155 lbs Clean and jerk; 21 reps\nRun 800 meters\n155 lbs Clean and jerk; 21 reps\nRun 1 Mile",
+        "category": "Hero",
+        "tag": "BARBELL"
+    },
+    {
+        "workoutName": "HAMMER",
+        "workoutTime": "Each Round For Time",
+        "workoutDetails": "Five rounds\n135 lbs Power clean; 5 rep\n135 lbs Front squat; 10 rep\n135 lbs Jerk; 5 rep\n20 Pull-up\nRest 90 seconds between each rounds",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "MOORE",
+        "workoutTime": "AMRAP: 20 Min",
+        "workoutDetails": "15 ft Rope Climb; 1 ascent\nRun 400 meters\nMax rep Handstand push-ups",
+        "category": "Hero",
+        "tag": "ROPE"
+    },
+    {
+        "workoutName": "WILMOT",
+        "workoutTime": "For Time",
+        "workoutDetails": "Six rounds\n50 Squats\n25 Ring dips",
+        "category": "Hero",
+        "tag": "GYM RINGS, BARBELL"
+    },
+    {
+        "workoutName": "MOON",
+        "workoutTime": "For Time",
+        "workoutDetails": "Seven rounds\n40 lbs dumbbell Hang split snatch; 10 reps Right arm\n15 ft Rope Climb; 1 ascent\n40 lbs dumbbell Hang split snatch; 10 reps Left arm\n15 ft Rope Climb; 1 ascent\nAlternate feet in the split snatch sets.",
+        "category": "Hero",
+        "tag": "DUMBBELL, ROPE"
+    },
+    {
+        "workoutName": "SMALL",
+        "workoutTime": "For Time",
+        "workoutDetails": "Three rounds\nRow 1000 meter\n50 Burpee\n50 Box jumps; 24in bo\nRun 800 meters",
+        "category": "Hero",
+        "tag": "ROWER, BOX"
+    },
+    {
+        "workoutName": "MORRISON",
+        "workoutTime": "For Time",
+        "workoutDetails": "50-40-30-20 and 10 rep rounds\nWall ball shots; 20 lbs ball\nBox jump; 24 inch box\nKettlebell swings; 1.5 pood",
+        "category": "Hero",
+        "tag": "BOX, MED BALL, KETTLEBELL"
+    },
+    {
+        "workoutName": "MANION",
+        "workoutTime": "For Time",
+        "workoutDetails": "Seven rounds\nRun 400 meter\n135 lbs Back squat; 29 reps",
+        "category": "Hero",
+        "tag": "BARBELL"
+    },
+    {
+        "workoutName": "GATOR",
+        "workoutTime": "For Time",
+        "workoutDetails": "Eight rounds of\n185 lbs Front squat; 5 reps\n26 Ring push-ups",
+        "category": "Hero",
+        "tag": "GYM RINGS, BARBELL"
+    },
+    {
+        "workoutName": "BRADLEY",
+        "workoutTime": "For Time",
+        "workoutDetails": "10 rounds\nSprint 100 meter\n10 Pull-up\nSprint 100 meter\n10 Burpee\nRest 30 seconds",
+        "category": "Hero",
+        "tag": "PULL UP BAR"
+    },
+    {
+        "workoutName": "MEADOWS",
+        "workoutTime": "For Time",
+        "workoutDetails": "20 Muscle-up\n25 Lowers from an inverted hang on the rings; slowly; with straight body and arm\n30 Ring handstand push-up\n35 Ring row\n40 Ring push-ups",
+        "category": "Hero",
+        "tag": "GYM RINGS, PULL UP BAR"
+    },
+    {
+        "workoutName": "SANTIAGO",
+        "workoutTime": "For Time",
+        "workoutDetails": "Seven rounds\n35 lbs Dumbbell hang squat clean; 18 reps\n18 Pull-ups\n135 lbs Power clean; 10 reps\n10 Handstand push-ups",
+        "category": "Hero",
+        "tag": "DUMBBELL, BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "CARSE",
+        "workoutTime": "For Time",
+        "workoutDetails": "21-18-15-12-9-6-3 reps of\n95 lbs Squat clean\nDouble-under\n185 lbs Deadlift\n24in Box jump\nBegin each rounds with a 50 meter Bear crawl.",
+        "category": "Hero",
+        "tag": "BARBELL, BOX"
+    },
+    {
+        "workoutName": "BRADSHAW",
+        "workoutTime": "For Time",
+        "workoutDetails": "10 rounds\n3 Handstand push-ups\n225 lbs Deadlift; 6 reps\n12 Pull-ups\n24 Double-unders",
+        "category": "Hero",
+        "tag": "SKIPPING ROPE, BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "WHITE",
+        "workoutTime": "For Time",
+        "workoutDetails": "Five rounds\n15ft Rope climb; 3 ascents\n10 Toes to bar 2\nWalking lunge steps with 45lb plate held overhead\nRun 400 meters",
+        "category": "Hero",
+        "tag": "PULL UP BAR, ROPE"
+    },
+    {
+        "workoutName": "SANTORA",
+        "workoutTime": "For Reps",
+        "workoutDetails": "Three rounds\n155 lbs Squat clean\n1 minute 20ft\nShuttle sprints (20ft forward + 20ft backwards = 1 rep\n1 minute 245 lbs Deadlift\n1 minute Burpee\n1 minute 155 lbs Jerk\n1 minute Rest 1 minute",
+        "category": "Hero",
+        "tag": "BARBELL"
+    },
+    {
+        "workoutName": "WOOD",
+        "workoutTime": "For Time",
+        "workoutDetails": "5 rounds\nRun 400 meter\n10 Burpee box jumps; 24in box\n95 lbs Sumo-deadlift high-pull; 10 rep\n95 lbs Thruster; 10 rep\nRest 1 minute",
+        "category": "Hero",
+        "tag": "BARBELL, BOX"
+    },
+    {
+        "workoutName": "HIDALGO",
+        "workoutTime": "For Time",
+        "workoutDetails": "Run 2 mile\nRest 2 minutes\n135 lbs Squat clean; 20 rep\n20 Box jump; 24in box\n20 Walking lunge steps with 45lb plate held overhead\n20 Box jump; 24in box\n135 lbs Squat clean; 20 rep\nRest 2 minutes\nRun 2 miles\nIf you've got a twenty lbs vest or body armor; wear it.",
+        "category": "Hero",
+        "tag": "BARBELL, BOX, VEST"
+    },
+    {
+        "workoutName": "RICKY",
+        "workoutTime": "AMRAP: 20 Min",
+        "workoutDetails": "10 Pull-up\n75 lbs dumbbell Deadlift; 5 rep\n135 lbs Push-press; 8 reps",
+        "category": "Hero",
+        "tag": "DUMBBELL, BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "DAE HAN",
+        "workoutTime": "For Time",
+        "workoutDetails": "Three rounds\nRun 800 meters with a 45 lbs barbel\n15 foot Rope climb; 3 ascent\n135 lbs Thruster; 12 reps",
+        "category": "Hero",
+        "tag": "BARBELL, ROPE"
+    },
+    {
+        "workoutName": "DESFORGES",
+        "workoutTime": "For Time",
+        "workoutDetails": "Five rounds\n225 lbs Deadlift; 12 reps\n20 Pull-ups\n135 lbs Clean and jerk; 12 reps\n20 Knees to elbows",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "RAHOI",
+        "workoutTime": "AMRAP: 12 Min",
+        "workoutDetails": "24 inch Box Jump; 12 reps\n95 lbs Thruster; 6 reps\n6 Bar-facing burpees",
+        "category": "Hero",
+        "tag": "BARBELL, BOX"
+    },
+    {
+        "workoutName": "ZIMMERMAN",
+        "workoutTime": "AMRAP: 25 Min",
+        "workoutDetails": "11 Chest-to-bar pull-ups\n2 Deadlifts; 315 lbss\n10 Handstand push-ups",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR"
+    },
+    {
+        "workoutName": "KLEPTO",
+        "workoutTime": "For Time",
+        "workoutDetails": "Four rounds\n27 Box jumps; 24in box\n20 Burpees\n11 Squat cleans; 145 lbss",
+        "category": "Hero",
+        "tag": "BARBELL, BOX"
+    },
+    {
+        "workoutName": "DEL",
+        "workoutTime": "For Time",
+        "workoutDetails": "25 Burpees\nRun 400 meters with a 20 lbs medicine ball\n25 Weighted pull-ups with a 20 lbs dumbbell\nRun 400 meters with a 20 lbs medicine ball\n25 Handstand push-ups\nRun 400 meters with a 20 lbs medicine ball\n25 Chest-to-bar pull-ups\nRun 400 meters with a 20 lbs medicine ball\n25 Burpees",
+        "category": "Hero",
+        "tag": "DUMBBELL, PULL UP BAR, MED BALL"
+    },
+    {
+        "workoutName": "PHEEZY",
+        "workoutTime": "For Time",
+        "workoutDetails": "Three rounds\n165 lbs Front squat; 5 reps\n18 Pull-ups\n225 lbs Deadlift; 5 reps\n18 Toes-to-bar\n165 lbs Push jerk; 5 reps\n18 Hand-release push-ups",
+        "category": "Hero",
+        "tag": "PULL UP BAR, BARBELL"
+    },
+    {
+        "workoutName": "J.J",
+        "workoutTime": "For Time",
+        "workoutDetails": "185 lbs Squat clean; 1 rep\n10 Parallette handstand push-ups\n185 lbs Squat clean; 2 reps\n9 Parallette handstand push-ups\n185 lbs Squat clean; 3 reps\n8 Parallette handstand push-ups\n185 lbs Squat clean; 4 reps\n7 Parallette handstand push-ups\n185 lbs Squat clean; 5 reps\n6 Parallette handstand push-ups\n185 lbs Squat clean; 6 reps\n5 Parallette handstand push-ups\n185 lbs Squat clean; 7 reps\n4 Parallette handstand push-ups\n185 lbs Squat clean; 8 reps\n3 Parallette handstand push-ups\n185 lbs Squat clean; 9 reps\n2 Parallette handstand push-ups\n185 lbs Squat clean; 10 reps\n1 Parallette handstand push-up",
+        "category": "Hero",
+        "tag": "BARBELL, PARALLETTE"
+    },
+    {
+        "workoutName": "JAG 28",
+        "workoutTime": "For Time",
+        "workoutDetails": "Run 800 meters\n28 Kettlebell swings; 2 pood\n28 Strict Pull-ups\n28 Kettlebell clean and jerk; 2 pood each\n28 Strict Pull-ups\nRun 800 meters",
+        "category": "Hero",
+        "tag": "PULL UP BAR, KETTLEBELL"
+    },
+    {
+        "workoutName": "BRIAN",
+        "workoutTime": "For Time",
+        "workoutDetails": "Three rounds\n15 foot Rope climb; 5 ascents\n185 lbs Back squat; 25 reps",
+        "category": "Hero",
+        "tag": "BARBELL, ROPE"
+    },
+    {
+        "workoutName": "NICK",
+        "workoutTime": "For Time",
+        "workoutDetails": "Twelve rounds\n45 lbs Dumbbell hang squat clean; 10 reps\n6 Handstand push-ups on dumbbells",
+        "category": "Hero",
+        "tag": "DUMBBELL"
+    },
+    {
+        "workoutName": "STRANGE",
+        "workoutTime": "For Time",
+        "workoutDetails": "Eight rounds\n600 meter Ru\n1.5 pood Weighted pull-up; 11 rep\n11 Walking lunge steps; carrying 1.5 pood kettlebell\n1.5 pood Kettlebell thruster; 11 reps",
+        "category": "Hero",
+        "tag": "PULL UP BAR, KETTLEBELL"
+    },
+    {
+        "workoutName": "TUMILSON",
+        "workoutTime": "For Time",
+        "workoutDetails": "Eight rounds\nRun 200 meter\n11 Dumbbell burpee deadlifts; 60 lbs dumbbells",
+        "category": "Hero",
+        "tag": "DUMBBELL"
+    },
+    {
+        "workoutName": "SHIP",
+        "workoutTime": "For Time",
+        "workoutDetails": "Nine rounds\n185 lbs Squat clean; 7 reps\n8 Burpee box jumps; 36in box",
+        "category": "Hero",
+        "tag": "BARBELL, BOX"
+    },
+    {
+        "workoutName": "JARED",
+        "workoutTime": "For Time",
+        "workoutDetails": "Four rounds\nRun 800 meter\n40 Pull-up\n70 Push-ups",
+        "category": "Hero",
+        "tag": "PULL UP BAR"
+    },
+    {
+        "workoutName": "TULLY",
+        "workoutTime": "For Time",
+        "workoutDetails": "Four rounds\nSwim 200 meter\n40 lbs Dumbbell squat cleans; 23 reps",
+        "category": "Hero",
+        "tag": "DUMBBELL"
+    },
+    {
+        "workoutName": "HOLLEYMAN",
+        "workoutTime": "For Time",
+        "workoutDetails": "Thirty rounds\n5 Wall ball shots; 20 lbs ball\n3 Handstand push-ups\n225 lbs Power clean; 1 rep",
+        "category": "Hero",
+        "tag": "BARBELL, MED BALL"
+    },
+    {
+        "workoutName": "ADRIAN",
+        "workoutTime": "For Time",
+        "workoutDetails": "Seven rounds\n3 Forward rolls\n5 Wall climbs\n7 Toes to bar\n9 Box jumps; 30in box",
+        "category": "Hero",
+        "tag": "PULL UP BAR, BOX"
+    },
+    {
+        "workoutName": "GLEN",
+        "workoutTime": "For Time",
+        "workoutDetails": "135 lbs Clean and jerk; 30 rep\nRun 1 mil\n15 foot Rope climb; 10 ascent\nRun 1 mil\n100 Burpees",
+        "category": "Hero",
+        "tag": "BARBELL, ROPE"
+    },
+    {
+        "workoutName": "TOMMY V",
+        "workoutTime": "AMRAP: 25 Min",
+        "workoutDetails": "7 Muscle-up\n155 lbs Thruster; 11 rep\n14 Toes-to-bar",
+        "category": "Hero",
+        "tag": "PULL UP BAR, BARBELL"
+    },
+    {
+        "workoutName": "RALPH",
+        "workoutTime": "For Time",
+        "workoutDetails": "Four rounds\n250 lbs Deadlift; 8 rep\n16 Burpee\n15 foot Rope climb; 3 ascent\nRun 600 meters",
+        "category": "Hero",
+        "tag": "BARBELL, ROPE"
+    },
+    {
+        "workoutName": "CLOVIS",
+        "workoutTime": "For Time",
+        "workoutDetails": "Run 10 mile\n150 Burpee pull-up\nPartition the run and burpee pull-ups as needed.",
+        "category": "Hero",
+        "tag": "PULL UP BAR"
+    },
+    {
+        "workoutName": "WESTON",
+        "workoutTime": "For Time",
+        "workoutDetails": "Five rounds\nRow 1000 meter\n200 meter Farmer carry; 45 lbs dumbbell\n45 lbs dumbbell Waiter walk; 50 meters; Right arm\n45 lbs dumbbell Waiter walk; 50 meters; Left arm",
+        "category": "Hero",
+        "tag": "DUMBBELL, ROWER"
+    },
+    {
+        "workoutName": "LOREDO",
+        "workoutTime": "For Time",
+        "workoutDetails": "Six rounds\n24 Squat\n24 Push-up\n24 Walking lunge step\nRun 400 meters",
+        "category": "Hero",
+        "tag": "BARBELL"
+    },
+    {
+        "workoutName": "SEAN",
+        "workoutTime": "For Time",
+        "workoutDetails": "Ten rounds\n11 Chest to bar pull-up\n75 lbs Front squat; 22 reps",
+        "category": "Hero",
+        "tag": "PULL UP BAR, BARBELL"
+    },
+    {
+        "workoutName": "HORTMAN",
+        "workoutTime": "AMRAP: 45 Min",
+        "workoutDetails": "Run 800 meter\n80 Squat\n8 Muscle-ups",
+        "category": "Hero",
+        "tag": "PULL UP BAR, BARBELL"
+    },
+    {
+        "workoutName": "HAMILTON",
+        "workoutTime": "For Time",
+        "workoutDetails": "Three rounds\nRow 1000 meter\n50 Push-up\nRun 1000 meter\n50 Pull-ups",
+        "category": "Hero",
+        "tag": "ROWER, PULL UP BAR"
+    },
+    {
+        "workoutName": "ZEUS",
+        "workoutTime": "For Time",
+        "workoutDetails": "Three rounds\n30 Wall ball shots; 20 lbs bal\n75 lbs Sumo deadlift high-pull; 30 rep\n30 Box jump; 20in bo\n75 lbs Push press; 30 rep\nRow 30 calorie\n30 Push-up\nBody weight Back squat; 10 reps",
+        "category": "Hero",
+        "tag": "ROWER, BARBELL, BOX, MED BALL"
+    },
+    {
+        "workoutName": "BARRAZA",
+        "workoutTime": "AMRAP: 18 Min",
+        "workoutDetails": "Run 200 meter\n275 lbs Deadlift; 9 rep\n6 Burpee bar muscle-ups",
+        "category": "Hero",
+        "tag": "BARBELL, PULL UP BAR"
+    }
+]
