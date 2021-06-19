@@ -9,6 +9,7 @@ Listed are the services of Workout Planner Android app - workout - import refere
 #### Request
 
 `GET /workout/{category}?anyinTable`
+
 **Required** _category(Case sensitive): "Open", "Hero", "Home", "Benchmark"_
 
     curl -i -H 'Accept: application/json' https://08ob74o7ol.execute-api.ap-southeast-2.amazonaws.com/prd/workout/Open?anyinTable=handstand
