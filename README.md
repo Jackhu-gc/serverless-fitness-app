@@ -1,8 +1,8 @@
 # Workout Planner Services
 
 Listed are the services of Workout Planner Android app 
-    - workout 
-    - import reference data
+- workout 
+- import reference data
 
 ## workout.service
 
