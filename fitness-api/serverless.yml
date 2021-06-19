@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: fitnessapp
+service: wp-service-workout
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
 #org: your-org-name
@@ -26,7 +26,7 @@ provider:
   lambdaHashingVersion: 20201221
 
   # you can overwrite defaults here
-  stage: dev
+  stage: ${opt:stage, 'dev'}
   region: ap-southeast-2
 
   # you can add statements to the Lambda function's IAM Role here
@@ -61,8 +61,8 @@ provider:
 
   # you can define service wide environment variables here
   environment:
-    IMPORT_DATA_S3_BUCKET: 'importdatabucket'
-    PRE_DEFINED_WORKOUT_TABLE: 'pre_defined_workouts'
+    IMPORT_DATA_S3_BUCKET: wp.${self:provider.stage}.importdatabucket
+    PRE_DEFINED_WORKOUT_TABLE: wp.${self:provider.stage}.pre_defined_workouts
     # HOME_WORKOUT_TABLE:
     # BENCHMARK_WORKOUT_TABLE:
     # HERO_WORKOUT_TABLE:
@@ -107,7 +107,13 @@ functions:
                 category: true
               querystrings:
                 anyinTable: false
-
+      - http:
+          path: workout/all
+          method: get
+          request:
+            parameters:
+              querystrings:
+                equipment: true
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details

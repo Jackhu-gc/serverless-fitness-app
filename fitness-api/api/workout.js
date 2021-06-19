@@ -4,18 +4,51 @@ AWS.config.setPromisesDependency(require('bluebird'));
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
 exports.get = async (event, context, callback) => {
-  const { category } = event.pathParameters;
-  let { anyinTable } = event.queryStringParameters;
+  if (!event.pathParameters) {
+    if (!event.queryStringParameters) {
+      const err = new Error('missing query parameter - equipments');
+      console.log(err);
 
-  let params = {
-    TableName: process.env.PRE_DEFINED_WORKOUT_TABLE,
-    KeyConditionExpression: 'category = :pk',
-    ExpressionAttributeValues: {
-      ':pk': category,
-    },
-    ProjectionExpression:
-      'Id, workoutName, workoutTime, workoutDetails, category',
-  };
+      return callback(null, {
+        statusCode: 500,
+        body: JSON.stringify({
+          error: err.message,
+        }),
+      });
+    }
+    const { equipment } = event.queryStringParameters;
+    const params = {
+      TableName: process.env.PRE_DEFINED_WORKOUT_TABLE,
+      ProjectionExpression:
+        'Id, workoutName, workoutTime, workoutDetails, category, equipment',
+      FilterExpression: 'contains(#equips, :equips)',
+      ExpressionAttributeNames: {
+        '#equips': 'equipment',
+      },
+      ExpressionAttributeValues: {
+        ':equips': equipment,
+      },
+    };
+
+    try {
+      let queryResult = await dynamoDb.scan(params).promise();
+
+      return callback(null, {
+        statusCode: 200,
+        body: JSON.stringify({
+          workout: queryResult.Items,
+        }),
+      });
+    } catch (err) {
+      console.log(err);
+      return callback(null, {
+        statusCode: 500,
+        body: JSON.stringify({
+          error: err.message,
+        }),
+      });
+    }
+  }
 
   console.log('Query Workout table.');
 
@@ -25,11 +58,9 @@ exports.get = async (event, context, callback) => {
   //       'Query failed to load data. Error JSON:',
   //       JSON.stringify(err, null, 2)
   //     );
-
   //     callback(err);
   //   } else {
   //     console.log('Query succeeded.');
-
   //     return callback(null, {
   //       statusCode: 200,
   //       body: JSON.stringify({
@@ -38,20 +69,40 @@ exports.get = async (event, context, callback) => {
   //     });
   //   }
   // };
-
   // dynamoDb.query(params, onQuery);
+  const { category } = event.pathParameters;
+  const { anyinTable } = event.queryStringParameters || {};
+
+  const params = {
+    TableName: process.env.PRE_DEFINED_WORKOUT_TABLE,
+    KeyConditionExpression: 'category = :pk',
+    ExpressionAttributeValues: {
+      ':pk': category,
+    },
+    ProjectionExpression:
+      'Id, workoutName, workoutTime, workoutDetails, category, equipment',
+  };
+
   try {
-    const queryResult = await dynamoDb.query(params).promise();
-    console.log(queryResult.Items[0]);
-    const filterResults = FilterItems(queryResult.Items, anyinTable);
+    let queryResult = await dynamoDb.query(params).promise();
+    let queryResultItems = queryResult.Items;
+    if (anyinTable) {
+      queryResultItems = FilterItems(queryResultItems, anyinTable);
+    }
     return callback(null, {
       statusCode: 200,
       body: JSON.stringify({
-        workout: filterResults,
+        workout: queryResultItems,
       }),
     });
   } catch (err) {
     console.log(err);
+    return callback(null, {
+      statusCode: 500,
+      body: JSON.stringify({
+        error: err.message,
+      }),
+    });
   }
 };
 

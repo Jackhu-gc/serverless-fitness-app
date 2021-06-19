@@ -1,14 +1,14 @@
 {
   "service": {
-    "service": "fitnessapp",
+    "service": "wp-service-workout",
     "serviceObject": {
-      "name": "fitnessapp"
+      "name": "wp-service-workout"
     },
     "provider": {
       "name": "aws",
       "runtime": "nodejs14.x",
       "lambdaHashingVersion": "20201221",
-      "stage": "dev",
+      "stage": "prd",
       "region": "ap-southeast-2",
       "iamRoleStatements": [
         {
@@ -31,8 +31,8 @@
         }
       ],
       "environment": {
-        "IMPORT_DATA_S3_BUCKET": "importdatabucket",
-        "PRE_DEFINED_WORKOUT_TABLE": "pre_defined_workouts"
+        "IMPORT_DATA_S3_BUCKET": "wp.prd.importdatabucket",
+        "PRE_DEFINED_WORKOUT_TABLE": "wp.prd.pre_defined_workouts"
       },
       "versionFunctions": true,
       "compiledCloudFormationTemplate": {
@@ -111,13 +111,13 @@
           "ImportDataLogGroup": {
             "Type": "AWS::Logs::LogGroup",
             "Properties": {
-              "LogGroupName": "/aws/lambda/fitnessapp-dev-importData"
+              "LogGroupName": "/aws/lambda/wp-service-workout-prd-importData"
             }
           },
           "GetWorkoutLogGroup": {
             "Type": "AWS::Logs::LogGroup",
             "Properties": {
-              "LogGroupName": "/aws/lambda/fitnessapp-dev-getWorkout"
+              "LogGroupName": "/aws/lambda/wp-service-workout-prd-getWorkout"
             }
           },
           "IamRoleLambdaExecution": {
@@ -145,8 +145,8 @@
                     "Fn::Join": [
                       "-",
                       [
-                        "fitnessapp",
-                        "dev",
+                        "wp-service-workout",
+                        "prd",
                         "lambda"
                       ]
                     ]
@@ -162,7 +162,7 @@
                         ],
                         "Resource": [
                           {
-                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/fitnessapp-dev*:*"
+                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/wp-service-workout-prd*:*"
                           }
                         ]
                       },
@@ -173,7 +173,7 @@
                         ],
                         "Resource": [
                           {
-                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/fitnessapp-dev*:*:*"
+                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/wp-service-workout-prd*:*:*"
                           }
                         ]
                       },
@@ -189,8 +189,8 @@
                 "Fn::Join": [
                   "-",
                   [
-                    "fitnessapp",
-                    "dev",
+                    "wp-service-workout",
+                    "prd",
                     {
                       "Ref": "AWS::Region"
                     },
@@ -207,17 +207,17 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/fitnessapp/dev/1622981906103-2021-06-06T12:18:26.103Z/fitnessapp.zip"
+                "S3Key": "serverless/wp-service-workout/prd/1624106734618-2021-06-19T12:45:34.618Z/wp-service-workout.zip"
               },
               "Handler": "import-data/ddbImporter.handler",
               "Runtime": "nodejs14.x",
-              "FunctionName": "fitnessapp-dev-importData",
+              "FunctionName": "wp-service-workout-prd-importData",
               "MemorySize": 512,
               "Timeout": 30,
               "Environment": {
                 "Variables": {
-                  "IMPORT_DATA_S3_BUCKET": "importdatabucket",
-                  "PRE_DEFINED_WORKOUT_TABLE": "pre_defined_workouts"
+                  "IMPORT_DATA_S3_BUCKET": "wp.prd.importdatabucket",
+                  "PRE_DEFINED_WORKOUT_TABLE": "wp.prd.pre_defined_workouts"
                 }
               },
               "Role": {
@@ -238,18 +238,18 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/fitnessapp/dev/1622981906103-2021-06-06T12:18:26.103Z/fitnessapp.zip"
+                "S3Key": "serverless/wp-service-workout/prd/1624106734618-2021-06-19T12:45:34.618Z/wp-service-workout.zip"
               },
               "Handler": "api/workout.get",
               "Runtime": "nodejs14.x",
-              "FunctionName": "fitnessapp-dev-getWorkout",
+              "FunctionName": "wp-service-workout-prd-getWorkout",
               "MemorySize": 128,
               "Timeout": 6,
               "Description": "Get workouts from different categories",
               "Environment": {
                 "Variables": {
-                  "IMPORT_DATA_S3_BUCKET": "importdatabucket",
-                  "PRE_DEFINED_WORKOUT_TABLE": "pre_defined_workouts"
+                  "IMPORT_DATA_S3_BUCKET": "wp.prd.importdatabucket",
+                  "PRE_DEFINED_WORKOUT_TABLE": "wp.prd.pre_defined_workouts"
                 }
               },
               "Role": {
@@ -263,31 +263,31 @@
               "GetWorkoutLogGroup"
             ]
           },
-          "ImportDataLambdaVersionGUsAhqJHhVGtHZGyDMFZica5XWqDumuGZsDjzMFhYA": {
+          "ImportDataLambdaVersionV6dB2EGgomhxkslr4IOOu2v0f8dWx3eVSp0Ca6TZhiQ": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ImportDataLambdaFunction"
               },
-              "CodeSha256": "OpNpBt/lU+LAnomFbi5Wnid6sMWZwIDioPBxzIJvOf4="
+              "CodeSha256": "QyF7TRf/tbWa3BVqYcYLH4kGz26O6vqakhRQ1mK6u0U="
             }
           },
-          "GetWorkoutLambdaVersione6CLLoZVZy97tpu1z6lziCFxov0xEpsoKvlD71JzxFQ": {
+          "GetWorkoutLambdaVersion6725MGx7LiGEhwn51wRj11l6Fafwd9cNdsPNYBDZbns": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetWorkoutLambdaFunction"
               },
-              "CodeSha256": "OpNpBt/lU+LAnomFbi5Wnid6sMWZwIDioPBxzIJvOf4=",
+              "CodeSha256": "QyF7TRf/tbWa3BVqYcYLH4kGz26O6vqakhRQ1mK6u0U=",
               "Description": "Get workouts from different categories"
             }
           },
-          "S3BucketImportdatabucket": {
+          "S3BucketWpprdimportdatabucket": {
             "Type": "AWS::S3::Bucket",
             "Properties": {
-              "BucketName": "importdatabucket",
+              "BucketName": "wp.prd.importdatabucket",
               "NotificationConfiguration": {
                 "LambdaConfigurations": [
                   {
@@ -313,10 +313,10 @@
               }
             },
             "DependsOn": [
-              "ImportDataLambdaPermissionImportdatabucketS3"
+              "ImportDataLambdaPermissionWpprdimportdatabucketS3"
             ]
           },
-          "ImportDataLambdaPermissionImportdatabucketS3": {
+          "ImportDataLambdaPermissionWpprdimportdatabucketS3": {
             "Type": "AWS::Lambda::Permission",
             "Properties": {
               "FunctionName": {
@@ -335,7 +335,7 @@
                     {
                       "Ref": "AWS::Partition"
                     },
-                    ":s3:::importdatabucket"
+                    ":s3:::wp.prd.importdatabucket"
                   ]
                 ]
               },
@@ -347,7 +347,7 @@
           "ApiGatewayRestApi": {
             "Type": "AWS::ApiGateway::RestApi",
             "Properties": {
-              "Name": "dev-fitnessapp",
+              "Name": "prd-wp-service-workout",
               "EndpointConfiguration": {
                 "Types": [
                   "EDGE"
@@ -378,6 +378,18 @@
                 "Ref": "ApiGatewayResourceWorkout"
               },
               "PathPart": "{category}",
+              "RestApiId": {
+                "Ref": "ApiGatewayRestApi"
+              }
+            }
+          },
+          "ApiGatewayResourceWorkoutAll": {
+            "Type": "AWS::ApiGateway::Resource",
+            "Properties": {
+              "ParentId": {
+                "Ref": "ApiGatewayResourceWorkout"
+              },
+              "PathPart": "all",
               "RestApiId": {
                 "Ref": "ApiGatewayRestApi"
               }
@@ -429,16 +441,62 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1622981901343": {
+          "ApiGatewayMethodWorkoutAllGet": {
+            "Type": "AWS::ApiGateway::Method",
+            "Properties": {
+              "HttpMethod": "GET",
+              "RequestParameters": {
+                "method.request.querystring.equipment": true
+              },
+              "ResourceId": {
+                "Ref": "ApiGatewayResourceWorkoutAll"
+              },
+              "RestApiId": {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "ApiKeyRequired": false,
+              "AuthorizationType": "NONE",
+              "Integration": {
+                "IntegrationHttpMethod": "POST",
+                "Type": "AWS_PROXY",
+                "Uri": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":apigateway:",
+                      {
+                        "Ref": "AWS::Region"
+                      },
+                      ":lambda:path/2015-03-31/functions/",
+                      {
+                        "Fn::GetAtt": [
+                          "GetWorkoutLambdaFunction",
+                          "Arn"
+                        ]
+                      },
+                      "/invocations"
+                    ]
+                  ]
+                }
+              },
+              "MethodResponses": []
+            }
+          },
+          "ApiGatewayDeployment1624106730853": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
                 "Ref": "ApiGatewayRestApi"
               },
-              "StageName": "dev"
+              "StageName": "prd"
             },
             "DependsOn": [
-              "ApiGatewayMethodWorkoutCategoryVarGet"
+              "ApiGatewayMethodWorkoutCategoryVarGet",
+              "ApiGatewayMethodWorkoutAllGet"
             ]
           },
           "GetWorkoutLambdaPermissionApiGateway": {
@@ -509,7 +567,7 @@
               "StreamSpecification": {
                 "StreamViewType": "NEW_AND_OLD_IMAGES"
               },
-              "TableName": "pre_defined_workouts"
+              "TableName": "wp.prd.pre_defined_workouts"
             }
           }
         },
@@ -519,25 +577,25 @@
               "Ref": "ServerlessDeploymentBucket"
             },
             "Export": {
-              "Name": "sls-fitnessapp-dev-ServerlessDeploymentBucketName"
+              "Name": "sls-wp-service-workout-prd-ServerlessDeploymentBucketName"
             }
           },
           "ImportDataLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ImportDataLambdaVersionGUsAhqJHhVGtHZGyDMFZica5XWqDumuGZsDjzMFhYA"
+              "Ref": "ImportDataLambdaVersionV6dB2EGgomhxkslr4IOOu2v0f8dWx3eVSp0Ca6TZhiQ"
             },
             "Export": {
-              "Name": "sls-fitnessapp-dev-ImportDataLambdaFunctionQualifiedArn"
+              "Name": "sls-wp-service-workout-prd-ImportDataLambdaFunctionQualifiedArn"
             }
           },
           "GetWorkoutLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetWorkoutLambdaVersione6CLLoZVZy97tpu1z6lziCFxov0xEpsoKvlD71JzxFQ"
+              "Ref": "GetWorkoutLambdaVersion6725MGx7LiGEhwn51wRj11l6Fafwd9cNdsPNYBDZbns"
             },
             "Export": {
-              "Name": "sls-fitnessapp-dev-GetWorkoutLambdaFunctionQualifiedArn"
+              "Name": "sls-wp-service-workout-prd-GetWorkoutLambdaFunctionQualifiedArn"
             }
           },
           "ServiceEndpoint": {
@@ -558,12 +616,12 @@
                   {
                     "Ref": "AWS::URLSuffix"
                   },
-                  "/dev"
+                  "/prd"
                 ]
               ]
             },
             "Export": {
-              "Name": "sls-fitnessapp-dev-ServiceEndpoint"
+              "Name": "sls-wp-service-workout-prd-ServiceEndpoint"
             }
           }
         }
@@ -661,7 +719,7 @@
         "events": [
           {
             "s3": {
-              "bucket": "importdatabucket",
+              "bucket": "wp.prd.importdatabucket",
               "event": "s3:ObjectCreated:*",
               "rules": [
                 {
@@ -671,12 +729,12 @@
             }
           }
         ],
-        "name": "fitnessapp-dev-importData",
+        "name": "wp-service-workout-prd-importData",
         "package": {},
         "memory": 512,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "ImportDataLambdaVersionGUsAhqJHhVGtHZGyDMFZica5XWqDumuGZsDjzMFhYA"
+        "versionLogicalId": "ImportDataLambdaVersionV6dB2EGgomhxkslr4IOOu2v0f8dWx3eVSp0Ca6TZhiQ"
       },
       "getWorkout": {
         "handler": "api/workout.get",
@@ -695,15 +753,27 @@
               },
               "integration": "AWS_PROXY"
             }
+          },
+          {
+            "http": {
+              "path": "workout/all",
+              "method": "get",
+              "request": {
+                "parameters": {
+                  "method.request.querystring.equipment": true
+                }
+              },
+              "integration": "AWS_PROXY"
+            }
           }
         ],
-        "name": "fitnessapp-dev-getWorkout",
+        "name": "wp-service-workout-prd-getWorkout",
         "package": {},
         "memory": 128,
         "timeout": 6,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "GetWorkoutLambdaVersione6CLLoZVZy97tpu1z6lziCFxov0xEpsoKvlD71JzxFQ"
+        "versionLogicalId": "GetWorkoutLambdaVersion6725MGx7LiGEhwn51wRj11l6Fafwd9cNdsPNYBDZbns"
       }
     },
     "resources": {
@@ -739,7 +809,7 @@
             "StreamSpecification": {
               "StreamViewType": "NEW_AND_OLD_IMAGES"
             },
-            "TableName": "pre_defined_workouts"
+            "TableName": "wp.prd.pre_defined_workouts"
           }
         }
       },
@@ -764,10 +834,10 @@
       }
     },
     "isDashboardMonitoringPreconfigured": false,
-    "artifact": "/Users/jackhu/Documents/ServerlessFitnessApp/fitness-api/.serverless/fitnessapp.zip"
+    "artifact": "/Users/jackhu/Documents/ServerlessFitnessApp/fitness-api/.serverless/wp-service-workout.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/fitnessapp/dev/1622981906103-2021-06-06T12:18:26.103Z",
-    "artifact": "fitnessapp.zip"
+    "artifactDirectoryName": "serverless/wp-service-workout/prd/1624106734618-2021-06-19T12:45:34.618Z",
+    "artifact": "wp-service-workout.zip"
   }
 }

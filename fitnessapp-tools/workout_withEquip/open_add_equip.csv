@@ -1,0 +1,42 @@
+workoutName,workoutTime,workoutDetails,category,equipment
+18.1,AMRAP: 20 Min,18 toes-to-bars\n10 dumbbell hang clean and jerks\n14-cal. Row,Open,"PULL UP BAR, DUMBBELL, BARBELL, ROWER"
+18.2,Time cap: 9 Min,1-2-3-4-5-6-7-8-9-10 rep\nDumbbell squats\nBar-facing burpees\nThen;\n1-rep-max clean,Open,"DUMBBELL, BARBELL"
+18.3,Time cap: 14 Min,Two rounds\n100 double-unders\n20 overhead squats\n100 double-unders\n12 ring muscle-ups\n100 double-unders\n20 dumbbell snatches\n100 double-unders\n12 bar muscle-ups\nMen perform 115-lb. OHS; 50-lb. DB snatches,Open,"DUMBBELL, SKIPPING ROPE, BARBELL, GYM RINGS, PULL UP BAR"
+18.4,Time cap: 9 min,21 deadlifts; 225 lb.\n21 handstand push-ups\n15 deadlifts; 225 lb.\n15 handstand push-ups\n9 deadlifts; 225 lb.\n9 handstand push-ups\n21 deadlifts; 315 lb.\n50-ft. handstand walk\n15 deadlifts; 315 lb.\n50-ft. handstand walk\n9 deadlifts; 315 lb.\n50-ft. handstand walk,Open,BARBELL
+18.5,AMRAP: 7 Min,3-6-9-? thrusters 100 lbs\n3-6-9-? chest-to-bar pull-ups,Open,BARBELL
+17.1,For Time,10 Dumbbell Snatch 50/35 lbs\n15 Burpee Box Jump Overs 24/20?\n20 Dumbbell Snatch 50/35 lbs\n15 Burpee Box Jump Overs 24/20?\n30 Dumbbell Snatch 50/35 lbs\n15 Burpee Box Jump Overs 24/20?\n40 Dumbbell Snatch 50/35 lbs\n15 Burpee Box Jump Overs 24/20?\n50 Dumbbell Snatch 50/35 lbs\n15 Burpee Box Jump Overs 24/20?,Open,"DUMBBELL, BOX"
+17.2,AMRAP: 12 Min,Two Rounds\n50 feet Dumbbell Walking Lunges 50/35 lbs\n16 Toes to Bars\n8 Dumbbell Power Cleans 50/35 lbs\nThen; Two Rounds\n50 ft Dumbbell Walking Lunges 50/35 lbs\n16 Bar Muscle-Ups\n8 Dumbbell Power Cleans 50/35 lbs,Open,"PULL UP BAR, DUMBBELL"
+17.3,Time cap: 8 Min,3 rounds\n6 Chest to Bar Pull Ups\n6 Squat Snatches 95/65 lbs\nThen; 3 rounds\n7 Chest to Bar Pull Ups\n5 Squat Snatches 135/95 lbs\nPrior to 12:00; complete 3 rounds\n8 Chest to Bar Pull Ups\n4 Squat Snatches 185/135 lbs\nSame rules applies to other rounds; +4 minutes if you finish 3 rounds; +1 C2B and -1 Squat Snatch; weight goes up to 225/155; 245/175 and 265/185 lbs,Open,"PULL UP BAR, BARBELL"
+17.4,AMRAP: 13 Min,55 Deadlifts 225/155 lbs\n55 Wall Balls 20/14 lbs\n55 cal Row\n55 HSPU,Open,"ROWER, BARBELL, MED BALL"
+17.5,For Time,10 Rounds of\n9 Thrusters 95/65 lbs\n35 DUs,Open,"BARBELL, SKIPPING ROPE"
+16.1,AMRAP: 20 Min,25-ft. Overhead Walking Lunges 95/65 lbs\n8 Bar Facing Burpees\n25-ft. Overhead Walking Lunges 95/65 lbs\n8 Chest-to-Bar Pull Ups,Open,"PULL UP BAR, BARBELL"
+16.2,Time cap: 4 Min,25 Toes-to-Bars\n50 Double-Unders\n15 Squat Cleans 135/85 lbs\nIf you finish before 4:00; add 4 minutes and continue:\n25 TTB + 50 DUs + 13 Sq Cleans 185/115\nSame rule applies for other rounds +4 minutes and decreased reps on squat cleans with increased weight\n25 TTB + 50 DUs + 11 Sq Cleans 225/145 lbs\n25 TTB + 50 DUs + 9 Sq Cleans 275/175 lbs\n25 TTB + 50 DUs + 7 Sq Cleans 315/205 lbs,Open,"PULL UP BAR, BARBELL, SKIPPING ROPE"
+16.3,AMRAP: 7 Min,10 Power Snatches 75/55 lbs\n3 Bar Muscle Ups,Open,"BARBELL, PULL UP BAR"
+16.4,AMRAP: 13 Min,55 Deadlifts 225/155 lbs\n55 Wall Balls 20/14 lbs\n55 cal Row\n55 HSPU,Open,"ROWER, BARBELL, MED BALL"
+16.5,For Time,21-18-15-12-9-6-3 rep\nThrusters 95/65 lbs\nBar Facing Burpees,Open,BARBELL
+15.1,AMRAP: 9 Min; Time cap: 6 Min,Part A: 9 Min AMRAP\n15 Toes-to-Bars\n10 Deadlifts 115/75 lbs\n5 Snatches 115/75 lbs\nPart B: 6 Minutes for\n1 RM Clean and Jerk,Open,"PULL UP BAR, BARBELL"
+15.2,For Time,From 0:00 to 3:00\nTwo rounds\n10 Overhead Squats 95/65 lbs\n10 Chest-to-Bar Pull Ups\nFrom 3:00 to 6:00\nTwo rounds\n12 Overhead Squats 95/65 lbs\n12 Chest-to-Bar Pull Ups\nFrom 6:00 to 9:00\nTwo rounds\n14 Overhead Squats 95/65 lbs\n14 Chest-to-Bar Pull Ups\nEtc.; following same pattern until you fail to complete both rounds,Open,"BARBELL, PULL UP BAR"
+15.3,AMRAP: 14 Min,7 Muscle Ups\n50 Wall Balls 20/14 lbs\n100 DUs,Open,"MED BALL, SKIPPING ROPE, PULL UP BAR"
+15.4,AMRAP: 8 Min,3-6-9-12-15-18-21-? HSPU\n3-3-3-6-6-6-9-? Cleans 185/125 lbs,Open,BARBELL
+15.5,For Time,27-21-15-9\nRow (calories)\nThrusters 95/65 lbs,Open,"ROWER, BARBELL"
+14.1,AMRAP: 10 Min,30 DUs\n15 Power Snatches 75/55 lbs,Open,"BARBELL, SKIPPING ROPE"
+14.2,For Time,From 0:00 to 3:00\nTwo rounds\n10 Overhead Squats 95/65 lbs\n10 Chest-to-Bar Pull Ups\nFrom 3:00 to 6:00\nTwo rounds\n12 Overhead Squats 95/65 lbs\n12 Chest-to-Bar Pull Ups\nFrom 6:00 to 9:00\nTwo rounds\n14 Overhead Squats 95/65 lbs\n14 Chest-to-Bar Pull Ups\nEtc.; following same pattern until you fail to complete both rounds,Open,"BARBELL, PULL UP BAR"
+14.3,Time cap: 8 Min,10 Deadlifts 135/95 lbs\n15 Box Jumps 24/20?\n15 Deadlifts 185/135 lbs\n15 Box Jumps 24/20?\n20 Deadlifts 225/155 lbs\n15 Box Jumps 24/20?\n25 Deadlifts 275/185 lbs\n15 Box Jumps 24/20?\n30 Deadlifts 315/250 lbs\n15 Box Jumps 24/20?\n35 Deadlifts 365/225 lbs\n15 Box Jumps 24/20?,Open,"BARBELL, BOX"
+14.4,14 Min AMRAP,60 cal Row\n50 Toes-to-Bars\n40 Wall Balls 20/14 lbs\n30 Cleans 135/95 lbs\n20 Muscle Ups,Open,"PULL UP BAR, ROWER, BARBELL, MED BALL"
+14.5,For Time,21-18-15-12-9-6-3\nThrusters 95/65 lbs\nBar Facing Burpees,Open,BARBELL
+13.1,17 Min AMRAP,40 Target Burpees\n30 Snatches 75/45 lbs\n30 Target Burpees\n30 Snatches 135/75 lbs\n20 Target Burpees\n30 Snatches 165/100 lbs\n10 Target Burpees\nMax Snatches 210/120 lbs,Open,BARBELL
+13.2,10 Min AMRAP,5 Shoulder-to-Overhead 115/75 lbs\n10 Deadlifts 115/75 lbs\n15 Box Jumps 24/20?,Open,"BARBELL, BOX"
+13.3,12 Min AMRAP,150 Wall Balls 20/14 lbs\n90 DUs\n30 Muscle Ups,Open,"MED BALL, SKIPPING ROPE, PULL UP BAR"
+13.4,7 Min AMRAP,3-6-9-12-?\nClean and Jerks 135/95 lbs\nToes-to-Bars,Open,"PULL UP BAR, BARBELL"
+13.5,4 Min AMRAP,15 Thrusters 100/65 lbs\n15 Chest-to-Bar Pull Ups\nTime extends by 4 minutes for each 3 completed round,Open,"BARBELL, PULL UP BAR"
+12.1,7 Min AMRAP,Target Burpees,Open,
+12.2,10 Min AMRAP,30 Snatches 75/45 lbs\n30 Snatches 135/75 lbs\n30 Snatches 165/100 lbs\nMax Snatches 210/120 lbs,Open,BARBELL
+12.3,18 Min AMRAP,15 Box Jumps 24/20?\n12 Push Presses 115/75\n9 Toes-to-Bars,Open,"PULL UP BAR, BOX"
+12.4,12 Min AMRAP,150 Wall Balls 20/14 lbs\n90 DUs\n30 Muscle Ups,Open,"MED BALL, SKIPPING ROPE, PULL UP BAR"
+12.5,7 Min AMRAP,3-6-9-12-15-?\nThrusters 100/65 lbs\nChest-to-Bar Pull Ups,Open,"BARBELL, PULL UP BAR"
+11.1,10 Min AMRAP,30 DUs\n15 Power Snatches 75/55 lbs,Open,"BARBELL, SKIPPING ROPE"
+11.2,15 Min AMRAP,9 Deadlifts 155/100 lbs\n12 HR Push Ups\n15 Box Jumps 24/20?,Open,"BARBELL, BOX"
+11.3,5 Min AMRAP,Squat Clean 165/110 lbs\nJerk 165/110 lbs,Open,BARBELL
+11.4,10 Min AMRAP,60 Bar Facing Burpees\n30 Overhead Squats 120/90 lbs\n10 Muscle Ups,Open,"BARBELL, PULL UP BAR"
+11.5,20 Min AMRAP,5 Power Cleans 145/100 lbs\n10 Toes-to-Bars\n15 Wall Balls 20/14 lbs,Open,"PULL UP BAR, BARBELL, MED BALL"
+11.6,7 Min AMRAP,3-6-9-12-15-?\nThrusters 100/65 lbs\nChest-to-Bar Pull Ups,Open,"BARBELL, PULL UP BAR"

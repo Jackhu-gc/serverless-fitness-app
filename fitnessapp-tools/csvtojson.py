@@ -16,7 +16,7 @@ def csv_to_json(csvFilePath, jsonFilePath):
     with open(jsonFilePath, 'w', encoding='utf-8') as jsonf: 
         jsonString = json.dumps(jsonArray, indent=4)
         jsonf.write(jsonString)
-          
-csvFilePath = r'benchmark_add_equip.csv'
-jsonFilePath = r'benchmark_add_eq.json'
+
+csvFilePath = r'./workout_withEquip/open_add_equip.csv'
+jsonFilePath = r'./workout_withEquip/open_add_eq.json'
 csv_to_json(csvFilePath, jsonFilePath)
