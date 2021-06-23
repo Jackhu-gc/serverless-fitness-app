@@ -35,6 +35,10 @@ exports.get = async (event, context, callback) => {
 
       return callback(null, {
         statusCode: 200,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Credentials': true,
+        },
         body: JSON.stringify({
           workout: queryResult.Items,
         }),
@@ -91,6 +95,10 @@ exports.get = async (event, context, callback) => {
     }
     return callback(null, {
       statusCode: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Credentials': true,
+      },
       body: JSON.stringify({
         workout: queryResultItems,
       }),

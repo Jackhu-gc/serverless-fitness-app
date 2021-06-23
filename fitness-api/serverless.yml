@@ -20,6 +20,13 @@ service: wp-service-workout
 # Check out our docs for more details
 frameworkVersion: '2'
 
+custom:
+  authorizer:
+    name: Cognito
+    arn:
+      ${self:provider.environment.USER_POOL}
+      # arn:aws:cognito-idp:#{AWS::Region}:#{AWS::AccountId}:userpool/${cf:alveo-${self:provider.stage}-aws-setup.UserPoolId}
+
 provider:
   name: aws
   runtime: nodejs14.x
@@ -63,6 +70,9 @@ provider:
   environment:
     IMPORT_DATA_S3_BUCKET: wp.${self:provider.stage}.importdatabucket
     PRE_DEFINED_WORKOUT_TABLE: wp.${self:provider.stage}.pre_defined_workouts
+    USER_POOL:
+      'Fn::GetAtt': [CognitoUserPool, Arn]
+
     # HOME_WORKOUT_TABLE:
     # BENCHMARK_WORKOUT_TABLE:
     # HERO_WORKOUT_TABLE:
@@ -101,6 +111,8 @@ functions:
       - http:
           path: workout/{category}
           method: get
+          cors: true
+          # authorizer: ${self:custom.authorizer}
           request:
             parameters:
               paths:
@@ -110,6 +122,8 @@ functions:
       - http:
           path: workout/all
           method: get
+          cors: true
+          # authorizer: ${self:custom.authorizer}
           request:
             parameters:
               querystrings:
@@ -180,6 +194,54 @@ resources:
           StreamViewType: 'NEW_AND_OLD_IMAGES'
         TableName: ${self:provider.environment.PRE_DEFINED_WORKOUT_TABLE}
     # S3 buckets
+    # CognitoUserPool
+    CognitoUserPool:
+      Type: AWS::Cognito::UserPool
+      Properties:
+        UserPoolName: ${self:provider.stage}-authsls-user-pool
+        UsernameAttributes:
+          - email
+        AutoVerifiedAttributes:
+          - email
+    CognitoUserPoolClient:
+      Type: AWS::Cognito::UserPoolClient
+      Properties:
+        ClientName: ${self:provider.stage}-authsls-user-pool-client
+        UserPoolId:
+          Ref: CognitoUserPool
+        GenerateSecret: false
+        SupportedIdentityProviders:
+          - Google
+        CallbackURLs:
+          - https://www.google.com.au
+        AllowedOAuthFlows:
+          - implicit
+        AllowedOAuthScopes:
+          - email
+          - openid
+          - aws.cognito.signin.user.admin
+          - profile
+          - phone
+        AllowedOAuthFlowsUserPoolClient: true
+    CognitoUserPoolDomain:
+      Type: AWS::Cognito::UserPoolDomain
+      Properties:
+        Domain: google-authen
+        UserPoolId:
+          Ref: CognitoUserPool
+    CognitoUserPoolIdentityProvider:
+      Type: AWS::Cognito::UserPoolIdentityProvider
+      Properties:
+        ProviderName: Google
+        AttributeMapping:
+          email: email
+        ProviderDetails:
+          client_id: ${file(./config-${opt:stage, 'dev'}.json):Google_Creds.GoogleOauth_Client_Id}
+          client_secret: ${file(./config-${opt:stage, 'dev'}.json):Google_Creds.GoogleOauth_Client_Secret}
+          authorize_scopes: email openid
+        ProviderType: Google
+        UserPoolId:
+          Ref: CognitoUserPool
 #  Outputs:
 #     NewOutput:
 #       Description: "Description for the output"

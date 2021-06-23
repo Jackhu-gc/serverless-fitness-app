@@ -74,13 +74,13 @@
     "ImportDataLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/wp-service-workout-prd-importData"
+        "LogGroupName": "/aws/lambda/wp-service-workout-dev-importData"
       }
     },
     "GetWorkoutLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/wp-service-workout-prd-getWorkout"
+        "LogGroupName": "/aws/lambda/wp-service-workout-dev-getWorkout"
       }
     },
     "IamRoleLambdaExecution": {
@@ -109,7 +109,7 @@
                 "-",
                 [
                   "wp-service-workout",
-                  "prd",
+                  "dev",
                   "lambda"
                 ]
               ]
@@ -125,7 +125,7 @@
                   ],
                   "Resource": [
                     {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/wp-service-workout-prd*:*"
+                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/wp-service-workout-dev*:*"
                     }
                   ]
                 },
@@ -136,7 +136,7 @@
                   ],
                   "Resource": [
                     {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/wp-service-workout-prd*:*:*"
+                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/wp-service-workout-dev*:*:*"
                     }
                   ]
                 },
@@ -168,7 +168,7 @@
             "-",
             [
               "wp-service-workout",
-              "prd",
+              "dev",
               {
                 "Ref": "AWS::Region"
               },
@@ -185,17 +185,23 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/wp-service-workout/prd/1624106734618-2021-06-19T12:45:34.618Z/wp-service-workout.zip"
+          "S3Key": "serverless/wp-service-workout/dev/1624450386319-2021-06-23T12:13:06.319Z/wp-service-workout.zip"
         },
         "Handler": "import-data/ddbImporter.handler",
         "Runtime": "nodejs14.x",
-        "FunctionName": "wp-service-workout-prd-importData",
+        "FunctionName": "wp-service-workout-dev-importData",
         "MemorySize": 512,
         "Timeout": 30,
         "Environment": {
           "Variables": {
-            "IMPORT_DATA_S3_BUCKET": "wp.prd.importdatabucket",
-            "PRE_DEFINED_WORKOUT_TABLE": "wp.prd.pre_defined_workouts"
+            "IMPORT_DATA_S3_BUCKET": "wp.dev.importdatabucket",
+            "PRE_DEFINED_WORKOUT_TABLE": "wp.dev.pre_defined_workouts",
+            "USER_POOL": {
+              "Fn::GetAtt": [
+                "CognitoUserPool",
+                "Arn"
+              ]
+            }
           }
         },
         "Role": {
@@ -216,18 +222,24 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/wp-service-workout/prd/1624106734618-2021-06-19T12:45:34.618Z/wp-service-workout.zip"
+          "S3Key": "serverless/wp-service-workout/dev/1624450386319-2021-06-23T12:13:06.319Z/wp-service-workout.zip"
         },
         "Handler": "api/workout.get",
         "Runtime": "nodejs14.x",
-        "FunctionName": "wp-service-workout-prd-getWorkout",
+        "FunctionName": "wp-service-workout-dev-getWorkout",
         "MemorySize": 128,
         "Timeout": 6,
         "Description": "Get workouts from different categories",
         "Environment": {
           "Variables": {
-            "IMPORT_DATA_S3_BUCKET": "wp.prd.importdatabucket",
-            "PRE_DEFINED_WORKOUT_TABLE": "wp.prd.pre_defined_workouts"
+            "IMPORT_DATA_S3_BUCKET": "wp.dev.importdatabucket",
+            "PRE_DEFINED_WORKOUT_TABLE": "wp.dev.pre_defined_workouts",
+            "USER_POOL": {
+              "Fn::GetAtt": [
+                "CognitoUserPool",
+                "Arn"
+              ]
+            }
           }
         },
         "Role": {
@@ -241,31 +253,31 @@
         "GetWorkoutLogGroup"
       ]
     },
-    "ImportDataLambdaVersionV6dB2EGgomhxkslr4IOOu2v0f8dWx3eVSp0Ca6TZhiQ": {
+    "ImportDataLambdaVersionGuZCTTOEtgHeCtPh5BHpf2s93tr0mrsAD8N6kQL8fc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ImportDataLambdaFunction"
         },
-        "CodeSha256": "QyF7TRf/tbWa3BVqYcYLH4kGz26O6vqakhRQ1mK6u0U="
+        "CodeSha256": "H7GLh3rEAlQlju79VdFxsE3goWy8EX6Jg5RR2hTxMlM="
       }
     },
-    "GetWorkoutLambdaVersion6725MGx7LiGEhwn51wRj11l6Fafwd9cNdsPNYBDZbns": {
+    "GetWorkoutLambdaVersiontoBsP0WSGcK4oUL5hipeDTr57n1IesX8Njo9F2wZIM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetWorkoutLambdaFunction"
         },
-        "CodeSha256": "QyF7TRf/tbWa3BVqYcYLH4kGz26O6vqakhRQ1mK6u0U=",
+        "CodeSha256": "H7GLh3rEAlQlju79VdFxsE3goWy8EX6Jg5RR2hTxMlM=",
         "Description": "Get workouts from different categories"
       }
     },
-    "S3BucketWpprdimportdatabucket": {
+    "S3BucketWpdevimportdatabucket": {
       "Type": "AWS::S3::Bucket",
       "Properties": {
-        "BucketName": "wp.prd.importdatabucket",
+        "BucketName": "wp.dev.importdatabucket",
         "NotificationConfiguration": {
           "LambdaConfigurations": [
             {
@@ -291,10 +303,10 @@
         }
       },
       "DependsOn": [
-        "ImportDataLambdaPermissionWpprdimportdatabucketS3"
+        "ImportDataLambdaPermissionWpdevimportdatabucketS3"
       ]
     },
-    "ImportDataLambdaPermissionWpprdimportdatabucketS3": {
+    "ImportDataLambdaPermissionWpdevimportdatabucketS3": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "FunctionName": {
@@ -313,7 +325,7 @@
               {
                 "Ref": "AWS::Partition"
               },
-              ":s3:::wp.prd.importdatabucket"
+              ":s3:::wp.dev.importdatabucket"
             ]
           ]
         },
@@ -325,7 +337,7 @@
     "ApiGatewayRestApi": {
       "Type": "AWS::ApiGateway::RestApi",
       "Properties": {
-        "Name": "prd-wp-service-workout",
+        "Name": "dev-wp-service-workout",
         "EndpointConfiguration": {
           "Types": [
             "EDGE"
@@ -368,6 +380,96 @@
           "Ref": "ApiGatewayResourceWorkout"
         },
         "PathPart": "all",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodWorkoutCategoryVarOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceWorkoutCategoryVar"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodWorkoutAllOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceWorkoutAll"
+        },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
@@ -464,15 +566,17 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1624106730853": {
+    "ApiGatewayDeployment1624450381992": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         },
-        "StageName": "prd"
+        "StageName": "dev"
       },
       "DependsOn": [
+        "ApiGatewayMethodWorkoutCategoryVarOptions",
+        "ApiGatewayMethodWorkoutAllOptions",
         "ApiGatewayMethodWorkoutCategoryVarGet",
         "ApiGatewayMethodWorkoutAllGet"
       ]
@@ -545,7 +649,73 @@
         "StreamSpecification": {
           "StreamViewType": "NEW_AND_OLD_IMAGES"
         },
-        "TableName": "wp.prd.pre_defined_workouts"
+        "TableName": "wp.dev.pre_defined_workouts"
+      }
+    },
+    "CognitoUserPool": {
+      "Type": "AWS::Cognito::UserPool",
+      "Properties": {
+        "UserPoolName": "dev-authsls-user-pool",
+        "UsernameAttributes": [
+          "email"
+        ],
+        "AutoVerifiedAttributes": [
+          "email"
+        ]
+      }
+    },
+    "CognitoUserPoolClient": {
+      "Type": "AWS::Cognito::UserPoolClient",
+      "Properties": {
+        "ClientName": "dev-authsls-user-pool-client",
+        "UserPoolId": {
+          "Ref": "CognitoUserPool"
+        },
+        "GenerateSecret": false,
+        "SupportedIdentityProviders": [
+          "Google"
+        ],
+        "CallbackURLs": [
+          "https://www.google.com.au"
+        ],
+        "AllowedOAuthFlows": [
+          "implicit"
+        ],
+        "AllowedOAuthScopes": [
+          "email",
+          "openid",
+          "aws.cognito.signin.user.admin",
+          "profile",
+          "phone"
+        ],
+        "AllowedOAuthFlowsUserPoolClient": true
+      }
+    },
+    "CognitoUserPoolDomain": {
+      "Type": "AWS::Cognito::UserPoolDomain",
+      "Properties": {
+        "Domain": "google-authen",
+        "UserPoolId": {
+          "Ref": "CognitoUserPool"
+        }
+      }
+    },
+    "CognitoUserPoolIdentityProvider": {
+      "Type": "AWS::Cognito::UserPoolIdentityProvider",
+      "Properties": {
+        "ProviderName": "Google",
+        "AttributeMapping": {
+          "email": "email"
+        },
+        "ProviderDetails": {
+          "client_id": "507178641821-ejpne318rvp0tm7kl7o753crha4m83mb.apps.googleusercontent.com",
+          "client_secret": "UURY7aj7x-POZA2QRq_1yLKH",
+          "authorize_scopes": "email openid"
+        },
+        "ProviderType": "Google",
+        "UserPoolId": {
+          "Ref": "CognitoUserPool"
+        }
       }
     }
   },
@@ -555,25 +725,25 @@
         "Ref": "ServerlessDeploymentBucket"
       },
       "Export": {
-        "Name": "sls-wp-service-workout-prd-ServerlessDeploymentBucketName"
+        "Name": "sls-wp-service-workout-dev-ServerlessDeploymentBucketName"
       }
     },
     "ImportDataLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ImportDataLambdaVersionV6dB2EGgomhxkslr4IOOu2v0f8dWx3eVSp0Ca6TZhiQ"
+        "Ref": "ImportDataLambdaVersionGuZCTTOEtgHeCtPh5BHpf2s93tr0mrsAD8N6kQL8fc"
       },
       "Export": {
-        "Name": "sls-wp-service-workout-prd-ImportDataLambdaFunctionQualifiedArn"
+        "Name": "sls-wp-service-workout-dev-ImportDataLambdaFunctionQualifiedArn"
       }
     },
     "GetWorkoutLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetWorkoutLambdaVersion6725MGx7LiGEhwn51wRj11l6Fafwd9cNdsPNYBDZbns"
+        "Ref": "GetWorkoutLambdaVersiontoBsP0WSGcK4oUL5hipeDTr57n1IesX8Njo9F2wZIM"
       },
       "Export": {
-        "Name": "sls-wp-service-workout-prd-GetWorkoutLambdaFunctionQualifiedArn"
+        "Name": "sls-wp-service-workout-dev-GetWorkoutLambdaFunctionQualifiedArn"
       }
     },
     "ServiceEndpoint": {
@@ -594,12 +764,12 @@
             {
               "Ref": "AWS::URLSuffix"
             },
-            "/prd"
+            "/dev"
           ]
         ]
       },
       "Export": {
-        "Name": "sls-wp-service-workout-prd-ServiceEndpoint"
+        "Name": "sls-wp-service-workout-dev-ServiceEndpoint"
       }
     }
   }
