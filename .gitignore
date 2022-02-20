@@ -1,3 +1,6 @@
 node_modules/
 .venv/
 .vscode/
+config-dev.json
+config-prd.json
+.serverless/
