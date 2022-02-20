@@ -93,6 +93,9 @@ exports.get = async (event, context, callback) => {
     if (anyinTable) {
       queryResultItems = FilterItems(queryResultItems, anyinTable);
     }
+    if (category == 'Open') {
+      queryResultItems.sort((a, b) => (a.workoutName < b.workoutName ? 1 : -1));
+    }
     return callback(null, {
       statusCode: 200,
       headers: {
